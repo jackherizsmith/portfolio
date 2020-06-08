@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.section-top {
+    margin-top: 5rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80rem;
+}
+
+.icon {
+    list-style: none;
+    max-width:4rem;
+    margin: 2rem;
+}
+
+.portfolio__projects-wrapper {
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.project {
+    max-width:20rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__image{
+    max-width: 100%;
+    height: auto;
+}
+
+.project__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.project__link{
+    list-style: none;
+}
+
+.link{
+
+}
