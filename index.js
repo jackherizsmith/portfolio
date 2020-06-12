@@ -2,7 +2,7 @@
 const project0 = document.getElementById("project0");
 const frame = document.querySelector(".portfolio__projects-frame");
 const stackFocus = document.getElementsByClassName("stack--focus");
-
+const anchors = document.querySelectorAll(".project__anchor");
 // set up project specs
 let projectsEdge, projectWidth, project0PosX, projectNum;
 const projectStacks = [
@@ -63,6 +63,12 @@ projectStacks[0].forEach(setStack);
 
 // keep frame up to date
 window.onresize = setFrame;
+
+// window.onscroll =  () => {
+//     const newAnchor = frame.getBoundingClientRect().top;
+//     anchors.forEach(anchor => anchor.style.top = newAnchor)
+//     console.log(anchors, newAnchor)
+// }
 
 // set stack on scroll
 frame.addEventListener("scroll", updateStack);
