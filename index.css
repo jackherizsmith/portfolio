@@ -10,11 +10,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: hsl(195, 93%, 96%);
+  padding: 0 1rem;
 }
 
 .title {
   font-size: 3rem;
-  text-align: center;
+  margin: 2rem auto;
 }
 
 .title__sub {
@@ -88,10 +89,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-}
-
-.portfolio__projects {
-  padding: 0 2rem;
 }
 
 .portfolio__projects-wrapper {
@@ -211,4 +208,9 @@ body {
   background-color: black;
   border-radius: 50%;
   text-shadow: 1px 1px 0 hsla(220, 20%, 20%, 0.5);
+}
+
+
+/* Laptops and desktop monitors */
+@media only screen and (min-width: 1215px) {
 }
