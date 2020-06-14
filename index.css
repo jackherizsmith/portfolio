@@ -82,12 +82,9 @@ body {
 
 .icon {
   min-width: 4rem;
-  height: auto;
-  max-height: 4rem;
-  margin: 2rem 2rem 3rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  max-width: 6rem;
+  max-height: 6rem;
+  margin: 1rem 2rem 3rem;
 }
 
 .portfolio__projects-wrapper {
