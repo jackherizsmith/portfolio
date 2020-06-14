@@ -17,7 +17,7 @@ const techNames = [
   postgres, //6
   node, //7
   restful, //8
-  express, //9
+  , //9 - removed express
   netlify, //10
   eleventy, //11
   heroku, //12
@@ -34,7 +34,7 @@ const techNames = [
 const projectStacks = [
   [
     //WIP
-    4,5,6,7,8,9,10,12,14,15,16,17,18,20,
+    4,5,6,7,8,10,12,14,15,16,17,18,20,
   ],
   [
     //CAF
