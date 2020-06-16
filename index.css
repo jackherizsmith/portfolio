@@ -50,7 +50,7 @@ body {
 
 .portfolio__tech-stack {
   max-width: 50rem;
-  padding: 0 2rem;
+  padding: 0 0 0 3rem;
 }
 
 .stack {
@@ -220,9 +220,67 @@ body {
   text-shadow: 1px 1px 0 hsla(220, 20%, 20%, 0.5);
 }
 
-.feedback {
-  
+.section__feedback {
+
 }
+
+.form {
+  display: block;
+  max-width: 50rem;
+  margin: 0 auto; }
+  .form__label, .form__input {
+    display: block; }
+  .form__label {
+    margin-bottom: 2.2rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: .7; }
+    .form__label > span {
+      color: #363c49; }
+  .form__input {
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: .3rem;
+    border: 0.2rem solid #3b434f;
+    padding: 1.5rem;
+    background-color: #fcf8f9;
+    min-width: 100%;
+    max-width: 100%; }
+    .form__input:focus {
+      outline-offset: .3rem;
+      outline: 0.4rem solid #3b434f; }
+    .form__input:only-of-type {
+      min-height: 15rem; }
+  .form__error {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    height: 2rem;
+    min-height: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: #a30000; }
+  .form__submission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .form__submit {
+    color: #3b434f;
+    margin-left: 2rem; }
+    .form__submit:hover {
+      color: #f5f6fa;
+      background-color: #3b434f; }
+  .form__thanks {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 0 2rem .3rem 0;
+    color: #186600;
+    transition: all .3s; }
 
 
 /* Laptops and desktop monitors */
