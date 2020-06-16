@@ -3,7 +3,6 @@ const stack = document.querySelector(".portfolio__tech-stack")
 const project0 = document.getElementById("project0");
 const projectsFrame = document.querySelector(".portfolio__projects-frame");
 const stackFocus = document.getElementsByClassName("stack--focus");
-const anchors = document.querySelectorAll(".project__anchor");
 
 // set up project specs
 let projectsEdge, projectWidth, project0PosX, projectNum;
@@ -32,28 +31,22 @@ const techNames = [
 ];
 
 const projectStacks = [
-  [
-    //WIP
+  [ //WIP
     4,5,6,7,8,10,12,14,15,16,17,18,20,
   ],
-  [
-    //CAF
+  [ //CAF
     4,5,8,10,14,15,16,17,18,19,20,
   ],
-  [
-    //SRVVRS
+  [ //SRVVRS
     0,1,3,6,7,8,12,13,15,18,
   ],
-  [
-    //Snakes
+  [ //Snakes
     1,4,5,8,10,15,18,
   ],
-  [
-    //Journalist
+  [ //Journalist
     0,2,3,10,11,18,
   ],
-  [
-    //Password
+  [ //Password
     0,1,3,6,7,8,
   ],
 ];
@@ -67,10 +60,10 @@ const setFrame = () => {
 };
 
 const setStack = (techRefs) => {
+  // if passed a project , focus the relevant tech otherwise focus all of them
   if (techRefs){
     techRefs.forEach(ref => {
       document.getElementById(techNames[ref].id).classList.add("stack--focus");
-      
     })
   } else {
     techNames.forEach(name => {
@@ -102,14 +95,6 @@ setFrame();
 
 // keep frame up to date
 window.onresize = setFrame;
-
-window.onscroll =  () => {
-    const newAnchor = projectsFrame.getBoundingClientRect().top;
-    anchors.forEach(anchor => {
-      anchor.style.top = newAnchor
-    })
-    console.log(anchors, newAnchor)
-}
 
 // set stack on scroll
 projectsFrame.addEventListener("scroll", updateStack);
