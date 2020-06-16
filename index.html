@@ -827,78 +827,79 @@
     </div>
     <section class="portfolio__feedback section-top">
       <h2 class="section__title">What they are saying</h2>
-      <article class="feedback">
-        <h3 class="feedback__title">
-          Full of ideas, enthusiasm and positive spirit
-        </h3>
-        <p class="feedback__text">
-          Jack is full of ideas, enthusiasm and positive spirit which makes
-          working with him super fun and rewarding. In our project team he was
-          open to building on everyone's ideas together and encouraging my
-          random lines of thought by considering them and responding, "you're so
-          right", even when I was unsure that I was. Jack channels his boundless
-          energy into filling our cohort with fun analogies (mostly, but not
-          limited to, cathedral metaphors), methods and tools, such that I learn
-          something new from him every day, even when not directly working with
-          him!
-        </p>
-      </article>
-      <article class="feedback">
-        <h3 class="feedback__title">
-          One thing for sure is that you'll learn something new by working with
-          him
-        </h3>
-        <p class="feedback__text">
-          Jack is an absolute joy to work with and one thing for sure is that
-          you'll learn something new by working with him. One of his greatest
-          strengths is his resourcefulness and he will always challenge the
-          status quo to find new ways to solve a problem; this has led to the
-          discovery of some fantastic new tools (Miro) which the entire cohort
-          are now using. One thing value most about Jack is his leadership and I
-          was continually impressed during his role as a scrum master. Both
-          keeping the team laser focused on meeting project requirements and the
-          task at hand. This coupled with a mindfulness of the individual needs
-          of a team means Jack is an integral part of any group and a continual
-          source of inspiration.
-        </p>
-      </article>
-      <article class="section__contact">
-        <form name="contact" method="POST" data-netlify="true" action="/" class="form">
-          <div class="form__wrapper">  
-              <label for="name" class="form__label">Name <span aria-label="required">*</span></label>
-              <input type="text" name="name" id="name" class="form__input" required />
-              <div class="form__error">-</div>
-              
-              <label for="email" class="form__label">Email <span aria-label="required">*</span></label>
-              <input type="email" name="email" id="email" class="form__input" required />
-              <div class="form__error">-</div>
-              
-              <label for="message" class="form__label">Message <span aria-label="required">*</span></label>
-              <textarea name="message" id="message" class="form__input" required></textarea>
-              <div class="form__error">-</div>
-          </div>
-          <div class="form__submission">
-              <button type="submit" class="button form__submit">Send</button>
-              <p class="form__thanks">Thank you for getting in touch!</p>
-          </div>
-        </form>
-      </article>
-      <article class="section__feedback">
-        <h3 class="feedback__title">
-          The team couldn’t have asked for a better UX lead
-        </h3>
-        <p class="feedback__text">
-          Oh my goodness Jack! This is beyond b e a u t i f u l! I absolutely
-          love your style guide, I don’t think I have anything to add to it
-          (just yet) it’s very complete and everything I would need (and more)
-          is right there… The team couldn’t have asked for a better UX lead,
-          nice one!
-        </p>
-      </article>
+      <div class="feedback-wrapper">
+        <article class="feedback">
+          <h3 class="feedback__title">
+            Full of ideas, enthusiasm and positive spirit
+          </h3>
+          <p class="feedback__text">
+            Jack is full of ideas, enthusiasm and positive spirit which makes
+            working with him super fun and rewarding. In our project team he was
+            open to building on everyone's ideas together and encouraging my
+            random lines of thought by considering them and responding, "you're so
+            right", even when I was unsure that I was. Jack channels his boundless
+            energy into filling our cohort with fun analogies (mostly, but not
+            limited to, cathedral metaphors), methods and tools, such that I learn
+            something new from him every day, even when not directly working with
+            him!
+          </p>
+        </article>
+        <article class="feedback">
+          <h3 class="feedback__title">
+            One thing for sure is that you'll learn something new by working with
+            him
+          </h3>
+          <p class="feedback__text">
+            Jack is an absolute joy to work with and one thing for sure is that
+            you'll learn something new by working with him. One of his greatest
+            strengths is his resourcefulness and he will always challenge the
+            status quo to find new ways to solve a problem; this has led to the
+            discovery of some fantastic new tools (Miro) which the entire cohort
+            are now using. One thing value most about Jack is his leadership and I
+            was continually impressed during his role as a scrum master. Both
+            keeping the team laser focused on meeting project requirements and the
+            task at hand. This coupled with a mindfulness of the individual needs
+            of a team means Jack is an integral part of any group and a continual
+            source of inspiration.
+          </p>
+        </article>
+        <article class="feedback">
+          <h3 class="feedback__title">
+            The team couldn’t have asked for a better UX lead
+          </h3>
+          <p class="feedback__text">
+            Oh my goodness Jack! This is beyond b e a u t i f u l! I absolutely
+            love your style guide, I don’t think I have anything to add to it
+            it’s very complete and everything I would need (and more)
+            is right there… The team couldn’t have asked for a better UX lead,
+            nice one!
+          </p>
+        </article>
+      </div>
     </section>
-    <footer class="footer">
-      JACK'S FOOTER
-    </footer>
+    <section class="portfolio__contact">
+      <h2 class="section__title section-top">Go on, send me a message...</h2>
+      <form name="contact" method="POST" data-netlify="true" action="/" class="form">
+        <div class="form__wrapper">  
+            <label for="name" class="form__label">Name <span aria-label="required">*</span></label>
+            <input type="text" name="name" id="name" class="form__input" required />
+            <div class="form__error">-</div>
+            
+            <label for="email" class="form__label">Email <span aria-label="required">*</span></label>
+            <input type="email" name="email" id="email" class="form__input" required />
+            <div class="form__error">-</div>
+            
+            <label for="message" class="form__label">Message <span aria-label="required">*</span></label>
+            <textarea name="message" id="message" class="form__input" required></textarea>
+            <div class="form__error">-</div>
+        </div>
+        <div class="form__submission">
+            <button type="submit" class="form__submit">Send</button>
+            <p class="form__thanks">Thank you for getting in touch!</p>
+        </div>
+      </form>
+    </section>
+    <footer class="footer"></footer>
     <script src="index.js"></script>
   </body>
 </html>
