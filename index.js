@@ -3,6 +3,7 @@ const stack = document.querySelector(".portfolio__tech-stack")
 const project0 = document.getElementById("project0");
 const projectsFrame = document.querySelector(".portfolio__projects-frame");
 const stackFocus = document.getElementsByClassName("stack--focus");
+const mobileFrame = document.querySelector(".portfolio__mobile");
 
 // set up project specs
 let projectsEdge, projectWidth, project0PosX, projectNum;
@@ -98,3 +99,7 @@ window.onresize = setFrame;
 
 // set stack on scroll
 projectsFrame.addEventListener("scroll", updateStack);
+
+mobileFrame.addEventListener("click", () => {
+  projectsFrame.focus();
+})
