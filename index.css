@@ -303,7 +303,7 @@ body {
   font-size: 1.25rem;
   font-family: inherit;
   font-weight: 200;
-  background-color: #fcf8f9;
+  background-color: hsl(195, 93%, 99%);
   min-width: 100%;
   max-width: 100%;
 }
