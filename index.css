@@ -39,6 +39,10 @@ body {
   font-size: 1.75rem;
 }
 
+.portfolio__connect {
+  margin-bottom: 4rem;
+}
+
 .connect__links {
   display: flex;
   flex-direction: row;
