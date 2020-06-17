@@ -46,6 +46,7 @@ body {
 .connect__links {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: space-evenly;
 }
