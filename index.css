@@ -54,6 +54,11 @@ body {
   list-style: none;
 }
 
+.connect__link:active,.connect__link:hover, .connect__link:focus {
+  outline: 0.25rem solid hsl(220, 60%, 60%);
+  outline-offset: 0.5rem;
+}
+
 .skill-set {
   display: flex;
   flex-direction: row-reverse;
@@ -168,11 +173,6 @@ body {
   min-width: fit-content;
   display: flex;
   flex-direction: column;
-}
-
-.project__anchor {
-  position: relative;
-  top: -7rem;
 }
 
 .project__title {
@@ -359,5 +359,9 @@ body {
 }
 
 /* Laptops and desktop monitors */
-@media only screen and (min-width: 1215px) {
+@media only screen and (min-width: 1120px) {
+  .project__anchor {
+    position: relative;
+    top: -7rem;
+  }
 }
