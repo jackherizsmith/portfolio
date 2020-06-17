@@ -25,7 +25,7 @@
   </head>
   <body class="portfolio">
     <heading class="section__title section-top">
-      <h1 class="portfolio__title title">I'm Jack, a full stack developer.</h1>
+      <h1 class="title">I'm Jack, a full stack developer.</h1>
       <p class="title__sub">
         I love to solve problems. I want to solve <em>your</em> problems.
       </p>
@@ -36,9 +36,17 @@
         joy to the people who use them. I am always looking for opportunities to
         share my skills and positive approach to add value to the world we live in.
       </p>
+      <nav class="portfolio__connect">
+        <h2 class="section__title section-top">Let's connect:</h3> 
+        <ul class="connect__links">
+          <li class="connect__link"><a href="https://www.linkedin.com/in/jherizsmith/">LinkedIn</li>
+          <li class="connect__link"><a href="#contact">Send a message</a></li>
+          <li class="connect__link"><a href="https://github.com/jackherizsmith">GitHub</a></li>
+        </ul>
+      </nav>
     </heading>
     <div class="skill-set">
-      <section class="portfolio__tech-stack section-top">
+      <section class="portfolio__tech-stack">
         <h2 class="section__title">Tech stack</h2>
         <ul class="stack">
           <li class="stack__icon stack--focus" id="html">
@@ -724,7 +732,7 @@
                 <a href="#projPassword">Password strength</a>
                 <div id="projWip" class="project__anchor"></div>
                 <h3 class="project__title">Work in Progress</h3>
-                <img src="/wip2.png" class="project__image" alt="" />
+                <img src="/wip.webp" class="project__image" alt="" />
                 <p>A social media platform for creative professionals to share works in progress</p>
                 <ul class="project__links">
                   <li class="project__link"><a href="https://github.com/fac19/work-in-progress/" class="link">Repo</a></li>
@@ -737,7 +745,7 @@
                 <a href="#projWip">Work in Progress</a>
                 <div id="projCaf" class="project__anchor"></div>
                 <h3 class="project__title">Criminal Appeals Fund</h3>
-                <img src="/caf2.png" class="project__image" alt="" />
+                <img src="/caf.webp" class="project__image" alt="" />
                 <p>For barristers to access funding to appeal legal cases in key areas of social impact</p>
                 <ul class="project__links">
                 <li class="project__link"><a href="https://github.com/fac19/criminal-appeals-fund/" class="link">Repo</a></li>
@@ -750,7 +758,7 @@
               <a href="#projCaf">Criminal Appeals Fund</a>
               <div id="projSrvvrs" class="project__anchor"></div>
               <h3 class="project__title">SRV|VRS</h3>
-              <img src="/srvvrs2.png" class="project__image" alt="" />
+              <img src="/srvvrs.webp" class="project__image" alt="" />
               <p>A platform for sharing online tools to help combat the negative impact of lockdown</p>
               <ul class="project__links">
                 <li class="project__link"><a href="https://github.com/fac19/week5-cjhk" class="link">Repo</a></li>
@@ -763,7 +771,7 @@
               <a href="#projSrvvrs">SRV|VRS</a>
               <div id="projSnakes" class="project__anchor"></div>
               <h3 class="project__title">Snakes</h3>
-              <img src="/snakes2.png" class="project__image" alt="" />
+              <img src="/snakes.webp" class="project__image" alt="" />
               <p>A classic game reimagined with React and gifs</p>
               <ul class="project__links">
                 <li class="project__link"><a href="https://github.com/fac19/snake" class="link">Repo</a></li>
@@ -776,7 +784,7 @@
               <a href="#projSnakes">Snakes</a>
               <div id="projJournalist" class="project__anchor"></div>
               <h3 class="project__title">Journalist portfolio</h3>
-              <img src="/wardles2.png" class="project__image" alt="" />
+              <img src="/wardles.webp" class="project__image" alt="" />
               <p>Portfolio website for a freelance journalist to manage via Netlify CMS</p>
               <ul class="project__links">
                 <li class="project__link"><a href="https://github.com/jackherizsmith/wardles/" class="link">Repo</a></li>
@@ -789,7 +797,7 @@
               <a href="#projJournalist">Journalist portfolio</a>
               <div id="projPassword" class="project__anchor"></div>
               <h3 class="project__title">Password strength</h3>
-              <img src="/password2.png" class="project__image" alt="" />
+              <img src="/password.webp" class="project__image" alt="" />
               <p>Rethinking how to ensure password strength in a user friendly way</p>
               <ul class="project__links">
                 <li class="project__link"><a href="https://github.com/jackherizsmith/password-strength" class="link">Repo</a></li>
@@ -821,7 +829,7 @@
               </li>
             </ul>
           </nav>
-          <img src="/frame.png" alt="mobile frame" class="portfolio__mobile"/>
+          <img src="/frame.webp" alt="mobile frame" class="portfolio__mobile"/>
         </div>
       </section>
     </div>
@@ -877,9 +885,9 @@
         </article>
       </div>
     </section>
-    <section class="portfolio__contact">
+    <section class="portfolio__contact" id="contact">
       <h2 class="section__title section-top">Go on, send me a message...</h2>
-      <form name="contact" method="POST" data-netlify="true" action="/" class="form">
+      <form name="contact" method="POST" data-netlify="true" class="form">
         <div class="form__wrapper">  
             <label for="name" class="form__label">Name <span aria-label="required">*</span></label>
             <input type="text" name="name" id="name" class="form__input" required />
