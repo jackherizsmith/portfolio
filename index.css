@@ -54,7 +54,9 @@ body {
   list-style: none;
 }
 
-.connect__link:active,.connect__link:hover, .connect__link:focus {
+.connect__link:active,
+.connect__link:hover,
+.connect__link:focus {
   outline: 0.25rem solid hsl(220, 60%, 60%);
   outline-offset: 0.5rem;
 }
@@ -107,8 +109,8 @@ body {
   margin: 1rem 2rem 3rem;
 }
 
-.portfolio__projects{
-  margin:0 auto;
+.portfolio__projects {
+  margin: 0 auto;
 }
 
 .portfolio__projects-wrapper {
@@ -245,30 +247,30 @@ body {
   justify-content: center;
 }
 
-.feedback{
+.feedback {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 30rem;
-  border: .1rem solid #272c33;
-  border-radius: .3rem;
+  border: 0.1rem solid #272c33;
+  border-radius: 0.3rem;
   margin: 2rem;
   padding: 1rem;
   background-color: hsl(195, 93%, 97%);
-  box-shadow: .5rem .5rem  #272c33;
+  box-shadow: 0.5rem 0.5rem #272c33;
 }
 
-.feedback:hover{
+.feedback:hover {
   background-color: hsl(195, 93%, 99%);
 }
 
-.feedback__title{
+.feedback__title {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.feedback__text{
+.feedback__text {
   font-size: 1.25rem;
 }
 
@@ -284,7 +286,7 @@ body {
   display: block;
 }
 .form__label {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   font-weight: 600;
   font-size: 1.4rem;
 }
@@ -295,7 +297,7 @@ body {
   border-radius: 0.3rem;
   border: 0.125rem solid #272c33;
   padding: 1rem;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   font-size: 1.25rem;
   font-family: inherit;
   font-weight: 200;
@@ -329,7 +331,7 @@ body {
   background-color: transparent;
   display: inline-block;
   text-transform: uppercase;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -339,7 +341,7 @@ body {
 }
 .form__submit:hover {
   color: #fcf8f9;
-  background-color:  #272c33;
+  background-color: #272c33;
 }
 .form__thanks {
   display: inline-block;
@@ -353,7 +355,7 @@ body {
 }
 
 .footer {
-  min-height:3rem;
+  min-height: 3rem;
   background-color: #272c33;
   min-width: 100vw;
 }
