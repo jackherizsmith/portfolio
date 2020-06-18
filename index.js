@@ -160,6 +160,7 @@ mobileFrame.addEventListener("click", () => {
 // form validation
 const form = document.querySelector("form");
 const inputs = form.querySelectorAll("input");
+const borderNorm = "0.125rem solid #272c33"
 
 const nameInput = form.querySelector("#name");
 const nameRegex = /^[a-zA-Z-.' ]{2,}$/;
@@ -200,32 +201,22 @@ form.addEventListener("submit", (event) => {
       }
     }
   } else {
+    let params="";
+    for (key in valid) {
+        params = params+"&"+key+"="+document.getElementById(key).value;
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(
-        "form-name=contact&" +
-          nameInput.name +
-          "=" +
-          nameInput.value +
-          "&" +
-          emailInput.name +
-          "=" +
-          emailInput.value +
-          "&" +
-          messageInput.name +
-          "=" +
-          messageInput.value
+        "form-name=contact"+ params
       ),
     })
       .then(() => {
-        // need to refactor!
-        nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-        nameInput.value = "";
-        emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-        emailInput.value = "";
-        messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-        messageInput.value = "";
+        for (key in valid) {
+          document.getElementById(key).style.border = borderNorm;
+          document.getElementById(key).value = "";
+        }
         thanks.style.visibility = "initial";
         thanks.style.opacity = "1";
       })
@@ -244,7 +235,7 @@ function validate(input, test) {
     input.style.borderColor = "hsl(106, 100%, 30%)";
     return true;
   } else {
-    input.style.border = ".2rem solid hsl(223, 55%, 22%)";
+    input.style.border = borderNorm;
     return false;
   }
 }
