@@ -19,7 +19,7 @@ body {
 
 .top {
   position: relative;
-  left:-3rem;
+  left: -3rem;
   min-height: 4rem;
   background-color: #272c33;
   min-width: 100vw;
@@ -363,7 +363,7 @@ body {
 
 .footer {
   position: relative;
-  left:-3rem;
+  left: -3rem;
   min-height: 3rem;
   background-color: #272c33;
   min-width: 100vw;

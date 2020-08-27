@@ -1,7 +1,5 @@
 const form = document.querySelector("form");
-const inputs = form.querySelectorAll("input");
 const borderNorm = "0.125rem solid hsl(215, 13%, 18%)";
-
 const thanks = document.querySelector(".form__thanks");
 
 const formInputs = [
@@ -47,12 +45,7 @@ form.addEventListener("submit", (event) => {
       }
     }
   } else {
-      const formData = new FormData(form);
-    //   let params = "";
-    // for (input in formInputs) {
-    //   const validInput = document.getElementById(formInputs[input].label);
-    //   params = params + "&" + formInputs[input].label + "=" + validInput.value;
-    // }
+    const formData = new FormData(form);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
