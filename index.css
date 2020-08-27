@@ -8,13 +8,13 @@ body {
   font-family: "Nunito", sans-serif;
   color: #272c33;
   overflow-x: hidden;
-  background-color: hsl(195, 93%, 96%);
-  padding: 0 3rem;
 }
 
 .portfolio {
   display: flex;
   flex-direction: column;
+  background-color: hsl(195, 93%, 96%);
+  padding: 0 3rem;
 }
 
 .top {
@@ -43,7 +43,6 @@ body {
 }
 
 .section__title {
-  margin-bottom: 3rem;
   text-align: center;
   font-size: 1.75rem;
 }
@@ -88,6 +87,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .stack__icon {
@@ -124,7 +124,7 @@ body {
 .portfolio__projects-wrapper {
   position: relative;
   max-width: 20rem;
-  height: 45rem;
+  height: 47rem;
 }
 
 .portfolio__projects-wrapper::before,
