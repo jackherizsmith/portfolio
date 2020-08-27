@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   max-width: 80rem;
+  min-height: 100vh;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
