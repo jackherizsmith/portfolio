@@ -9,11 +9,25 @@ body {
   color: #272c33;
   overflow-x: hidden;
   background-color: hsl(195, 93%, 96%);
+  padding: 0 3rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  position: relative;
+  left:-3rem;
+  min-height: 4rem;
+  background-color: #272c33;
+  min-width: 100vw;
 }
 
 .title {
   font-size: 3rem;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .title__sub {
@@ -26,21 +40,12 @@ body {
   font-weight: 300;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  padding: 0 3rem;
-}
-
-.section-top {
-  margin: 5rem 0 4rem;
 }
 
 .section__title {
   margin-bottom: 3rem;
   text-align: center;
   font-size: 1.75rem;
-}
-
-.portfolio__connect {
-  margin-bottom: 4rem;
 }
 
 .connect__links {
@@ -53,7 +58,7 @@ body {
 
 .connect__link {
   list-style: none;
-  margin: 1rem 0;
+  margin: 1rem 2rem;
 }
 
 .connect__link:active,
@@ -358,6 +363,8 @@ body {
 }
 
 .footer {
+  position: relative;
+  left:-3rem;
   min-height: 3rem;
   background-color: #272c33;
   min-width: 100vw;
