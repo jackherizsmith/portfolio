@@ -47,16 +47,16 @@ form.addEventListener("submit", (event) => {
       }
     }
   } else {
-    // let params = "";
-    // for (input in formInputs) {
-    //   const validInput = document.getElementById(formInputs[input].label);
-    //   params = params + "&" + formInputs[input].label + "=" + validInput.value;
-    // }
-    // console.log(params);
+    let params = "";
+    for (input in formInputs) {
+      const validInput = document.getElementById(formInputs[input].label);
+      params = params + "&" + formInputs[input].label + "=" + validInput.value;
+    }
+    console.log(params);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new FormData(form), //"form-name=contact"
+      body: new URLSearchParams("form-name=contact" + params),
     })
       .then(() => {
         for (input in formInputs) {
