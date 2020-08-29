@@ -25,31 +25,31 @@
   </head>
   <body class="portfolio">
     <div class="top"></div>
-    <heading class="section__title">
+    <heading class="portfolio__title section">
       <h1 class="title">I'm Jack, a full stack developer.</h1>
       <p class="title__sub">
         I love to solve problems. I want to solve <em>your</em> problems.
       </p>
-      <p class="portfolio__text">
+      <p class="portfolio__intro">
         <br />
         I have several years of experience working with inspiring people on
         challenging projects. I love to build things that work well and bring
         joy to the people who use them. I am always looking for opportunities to
         share my skills and positive approach to add value to the world we live in.
       </p>
-      <nav class="portfolio__connect">
-        <h2 class="section__title section-top">Let's connect:</h3> 
-        <ul class="connect__links">
-          <li class="connect__link"><a href="https://www.linkedin.com/in/jherizsmith/">LinkedIn</a></li>
-          <li class="connect__link"><a href="#contact">Send a message</a></li>
-          <li class="connect__link"><a href="https://github.com/jackherizsmith">GitHub</a></li>
-          <li class="connect__link"><a href="Jack_Heriz-Smith_CV.pdf">My CV</a></li>
-        </ul>
-      </nav>
     </heading>
-    <div class="skill-set">
+    <nav class="portfolio__connect section">
+      <h2 class="portfolio__title section-top">Let's connect:</h3> 
+      <ul class="connect__links">
+        <li class="connect__link"><a href="https://www.linkedin.com/in/jherizsmith/">LinkedIn</a></li>
+        <li class="connect__link"><a href="#contact">Send a message</a></li>
+        <li class="connect__link"><a href="https://github.com/jackherizsmith">GitHub</a></li>
+        <li class="connect__link"><a href="Jack_Heriz-Smith_CV.pdf">My CV</a></li>
+      </ul>
+    </nav>
+    <div class="skill-set section">
       <section class="portfolio__tech-stack">
-        <h2 class="section__title">Tech stack</h2>
+        <h2 class="portfolio__title">Tech stack</h2>
         <ul class="stack">
           <li class="stack__icon stack--focus" id="html">
             <p>HTML</p>
@@ -727,7 +727,7 @@
           </ul>
         </section>
         <section class="portfolio__projects section-top">
-          <h2 class="section__title">My projects</h2>
+          <h2 class="portfolio__title">My projects</h2>
           <div class="portfolio__projects-wrapper">
             <div class="portfolio__projects-frame" tabindex="0">
               <article class="project" id="project0">
@@ -835,8 +835,8 @@
         </div>
       </section>
     </div>
-    <section class="portfolio__feedback">
-      <h2 class="section__title">What they are saying</h2>
+    <section class="portfolio__feedback section">
+      <h2 class="portfolio__title">What they are saying</h2>
       <div class="feedback-wrapper">
         <article class="feedback">
           <h3 class="feedback__title">
@@ -887,8 +887,8 @@
         </article>
       </div>
     </section>
-    <section class="portfolio__contact" id="contact">
-      <h2 class="section__title section-top">Go on, send me a message...</h2>
+    <section class="portfolio__contact section" id="contact">
+      <h2 class="portfolio__title section-top">Go on, send me a message...</h2>
       <form name="contact" method="POST" data-netlify="true" class="form">
         <div class="form__wrapper">  
             <label for="name" class="form__label">Name <span aria-label="required">*</span></label>
@@ -911,6 +911,6 @@
     </section>
     <footer class="footer"></footer>
     <script src="setStack.js"></script>
-    <script src="validateForm.js"></script>
+    <script src="handleForm.js"></script>
   </body>
 </html>

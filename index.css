@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.section {
+  padding: 3rem 0;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   color: #272c33;
@@ -28,23 +32,26 @@ body {
 .title {
   font-size: 3rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .title__sub {
   font-weight: 600;
   text-align: center;
   font-size: 1.6rem;
+  padding-bottom: .75rem;
 }
 
-.portfolio__text {
+.portfolio__intro {
   font-weight: 300;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
 }
 
-.section__title {
+.portfolio__title {
   text-align: center;
   font-size: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 .connect__links {
@@ -58,6 +65,8 @@ body {
 .connect__link {
   list-style: none;
   margin: 1rem 2rem;
+  text-align: center;
+  font-size: 1.75rem;
 }
 
 .connect__link:active,
@@ -211,6 +220,13 @@ body {
 .project__link {
   list-style: none;
   margin: 0 1rem;
+}
+
+.link:active,
+.link:hover,
+.link:focus {
+  outline: 0.25rem solid hsl(220, 60%, 60%);
+  outline-offset: 0.25rem;
 }
 
 .project > a {

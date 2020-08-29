@@ -1,25 +1,25 @@
 const form = document.querySelector("form");
 const borderNorm = "0.125rem solid hsl(215, 13%, 18%)";
 const thanks = document.querySelector(".form__thanks");
-
+const inputIds = ["name", "email", "message"]
 const formInputs = [
   {
-    label: "name",
-    element: form.querySelector("#name"),
+    label: inputIds[0],
+    element: form.getElementById(inputIds[0]),
     regex: /^[a-zA-Z-.' ]{2,}$/,
     valid: false,
     errorMessage: "Check your name doesn't contain odd characters.",
   },
   {
-    label: "email",
-    element: form.querySelector("#email"),
+    label: inputIds[1],
+    element: form.getElementById(inputIds[1]),
     regex: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     valid: false,
     errorMessage: "This needs to include an @ symbol and domain.",
   },
   {
-    label: "message",
-    element: form.querySelector("#message"),
+    label: inputIds[2],
+    element: form.getElementById(inputIds[2]),
     regex: /^(?!\s*$).+/,
     valid: false,
     errorMessage: "Please include some detail of why you are reaching out.",
@@ -53,9 +53,9 @@ form.addEventListener("submit", (event) => {
     })
       .then(() => {
         for (input in formInputs) {
-          const inputLabel = document.getElementById(formInputs[input].label);
-          inputLabel.style.border = borderNorm;
-          inputLabel.value = "";
+          const inputElement = document.getElementById(formInputs[input].label);
+          inputElement.style.border = borderNorm;
+          inputElement.value = "";
         }
         thanks.style.visibility = "initial";
         thanks.style.opacity = "1";
@@ -66,7 +66,7 @@ form.addEventListener("submit", (event) => {
 
 function validate(input, test) {
   const inputFlag = input.nextElementSibling;
-  thanks.style.visibility = "hidden"; // maybe better in addeventlistener for user focus
+  thanks.style.visibility = "hidden"; // maybe all need to be in if?
   thanks.style.opacity = "0";
   inputFlag.textContent = "-";
   inputFlag.style.visibility = "hidden";
