@@ -129,18 +129,18 @@ const setStack = (techRefs) => {
 const updateStack = () => {
   if (projectsTop - stackTop < 300) {
     project0PosX = project0.getBoundingClientRect().left;
-    // as project 0 moves left, find how far it has moved in (absolute) multiples of its own width
+    // as project 0 moves left, find how far it has moved in integer multiples of its width
     projectNum = Math.abs((project0PosX - projectsEdge) / projectWidth);
     if (Number.isInteger(projectNum)) {
       // when integer update stack
       while (stackFocus.length) {
         // remove current project stack
         stackFocus[0].classList.remove("stack--focus");
-      } // focus stack for incoming project
+      } // set new stack for incoming project
       setStack(projectStacks[projectNum]);
     }
   } else if (stackFocus.length < techNames.length) {
-    setStack(); // focus all icons if wrapped
+    setStack(); // focus all icons if wrapped and if not already all focussed
   }
 };
 
