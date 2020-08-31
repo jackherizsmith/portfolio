@@ -51,6 +51,10 @@ body {
   padding-bottom: 1rem;
 }
 
+.title:hover > span{
+  color: var(--highlight);
+}
+
 .title__sub {
   font-weight: 600;
   text-align: center;
@@ -58,9 +62,17 @@ body {
   padding-bottom: .75rem;
 }
 
+.title__sub:hover > span{
+  color: var(--highlight);
+}
+
 .portfolio__intro {
   font-weight: 300;
   font-size: 1.5rem;
+}
+
+.portfolio__intro > span:hover{
+  color: var(--highlight);
 }
 
 .portfolio__title {
@@ -155,7 +167,7 @@ body {
 .portfolio__projects-wrapper {
   position: relative;
   max-width: 20rem;
-  height: 49rem; /*47*/
+  height: 47rem;
 }
 
 .portfolio__projects-wrapper::before,
