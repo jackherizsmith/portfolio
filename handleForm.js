@@ -48,8 +48,6 @@ const validate = (input, test) => {
   const inputFlag = input.nextElementSibling;
   // if there's an error message reset the element's state
   if (inputFlag.textContent != "-") {
-    thanks.style.visibility = "hidden";
-    thanks.style.opacity = "0";
     inputFlag.textContent = "-";
     inputFlag.style.visibility = "hidden";
     inputFlag.style.opacity = "0";
@@ -72,6 +70,10 @@ const updateValidity = (inputObj) => {
 
 formInputs.forEach((input) => {
   input.element.addEventListener("input", () => {
+    if (thanks.style.opacity === '1'){
+      thanks.style.visibility = "hidden";
+      thanks.style.opacity = "0";
+    }
     updateValidity(input);
   });
 });

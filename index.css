@@ -371,7 +371,7 @@ body {
 }
 
 .form__label > span {
-  color: #363c49;
+  color: var(--highlight);
 }
 
 .form__input {
@@ -417,13 +417,13 @@ body {
 .form__submit {
   border: none;
   background-color: transparent;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  text-align: center;
   border-radius: 0.3rem;
   transition: all 0.2s;
 }
