@@ -97,8 +97,7 @@ body {
 }
 
 .connect__link:active,
-.connect__link:hover,
-.connect__link:focus {
+.connect__link:hover {
   outline: 0.25rem solid var(--outline);
   outline-offset: 0.5rem;
 }
@@ -262,13 +261,6 @@ body {
 
 .link {
   font-weight: 700;
-}
-
-.link:active,
-.link:hover,
-.link:focus {
-  outline: 0.25rem solid var(--outline);
-  outline-offset: 0.25rem;
 }
 
 .project > a {
