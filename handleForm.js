@@ -46,6 +46,10 @@ const sendMessage = (formData) => {
 
 const validate = (input, test) => {
   const inputFlag = input.nextElementSibling;
+  if (thanks.style.opacity === '1'){
+    thanks.style.visibility = "hidden";
+    thanks.style.opacity = "0";
+  }
   // if there's an error message reset the element's state
   if (inputFlag.textContent != "-") {
     inputFlag.textContent = "-";
@@ -70,10 +74,6 @@ const updateValidity = (inputObj) => {
 
 formInputs.forEach((input) => {
   input.element.addEventListener("input", () => {
-    if (thanks.style.opacity === '1'){
-      thanks.style.visibility = "hidden";
-      thanks.style.opacity = "0";
-    }
     updateValidity(input);
   });
 });
@@ -95,7 +95,10 @@ const handleSubmit = (event) => {
         falseFlag.setAttribute("role", "alert");
       }
     });
-  } else sendMessage(new FormData(form));
+  } else {
+    sendMessage(new FormData(form));
+    formInputs.forEach(input => input.valid = false);
+  }
 };
 
 form.setAttribute("novalidate", "");
