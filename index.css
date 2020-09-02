@@ -440,6 +440,7 @@ body {
   margin: 0 2rem 0.3rem 0;
   color: #186600;
   transition: all 0.3s;
+  text-align: right;
 }
 
 .footer {
