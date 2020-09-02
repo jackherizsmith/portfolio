@@ -32,7 +32,8 @@ const sendMessage = (formData) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => {
+    .then((res) => {
+      console.log(res)
       for (input in formInputs) {
         const inputElement = document.getElementById(formInputs[input].label);
         inputElement.style.border = borderNorm;
